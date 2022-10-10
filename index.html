@@ -443,6 +443,35 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form action="" class="modal-form">
+          <div class="form-element">
+            <label class="form-label" for="name">Ім'я</label>
+            <input class="form-input" type="text" name="name" id="name" />
+          </div>
+
+          <div class="form-element">
+            <label class="form-label" for="tel">Телефон</label>
+            <input class="form-input" type="tel" name="tel" id="tel" />
+          </div>
+
+          <div class="form-element">
+            <label class="form-label" for="email">Пошта</label>
+            <input class="form-input" type="email" name="email" id="email" />
+          </div>
+
+          <div class="form-element">
+            <label class="form-label" for="textarea">Коментар</label>
+            <textarea
+              class="form-input textarea"
+              name="textarea"
+              id="textarea"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+
+          <button class="submit-button" type="submit">Відправити</button>
+        </form>
         <button class="close-button" type="button" data-modal-close>
           <svg
             width="11"

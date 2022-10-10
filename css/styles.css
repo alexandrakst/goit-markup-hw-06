@@ -720,12 +720,17 @@ img {
   height: 581px;
   top: 50%;
   left: 50%;
+  padding: 40px;
 
   transform: translate(-50%, -50%);
   background-color: var(--fourth-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+.modal-title {
+  text-align: center;
 }
 
 .close-button {
@@ -759,4 +764,55 @@ img {
 
 .no-scroll {
   overflow: hidden;
+}
+
+/* Form */
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+}
+
+.form-label {
+  margin-bottom: 4px;
+}
+
+.form-input.textarea {
+  width: 448px;
+  height: 120px;
+
+  padding: 12px 16px;
+
+  resize: none;
+}
+
+.form-input {
+  height: 40px;
+  padding-left: 42px;
+
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+.submit-button {
+  display: block;
+  text-align: center;
+  width: 200px;
+  padding: 10px 52px;
+
+  border: transparent;
+  border-radius: 4px;
+  color: var(--fourth-text-color);
+  background-color: var(--accent-color);
+
+  cursor: pointer;
 }
