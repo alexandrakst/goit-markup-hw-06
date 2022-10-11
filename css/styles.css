@@ -899,8 +899,8 @@ img {
   fill: var(--accent-color);
 }
 
-.form-input:focus + .form-icon:hover,
-.form-input:focus + .form-icon:focus {
+.form-input + .form-icon:hover,
+.form-input + .form-icon:focus {
   fill: var(--accent-color);
 }
 
