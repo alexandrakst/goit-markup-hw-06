@@ -626,9 +626,14 @@ img {
 
   text-align: center;
   letter-spacing: 0.06em;
+  outline: none;
 
   color: var(--fourth-text-color);
   background: var(--accent-color);
+}
+
+.subscribe-icon {
+  outline: 1px solid red;
 }
 
 .subscribe-button:hover,
@@ -891,6 +896,11 @@ img {
 }
 
 .form-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
+
+.form-input:focus + .form-icon:hover,
+.form-input:focus + .form-icon:focus {
   fill: var(--accent-color);
 }
 
