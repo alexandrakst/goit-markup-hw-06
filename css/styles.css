@@ -584,6 +584,10 @@ img {
   color: var(--fourth-text-color);
 }
 
+.footer-form {
+  display: flex;
+}
+
 .subscribe-email {
   width: 358px;
   margin-right: 12px;
