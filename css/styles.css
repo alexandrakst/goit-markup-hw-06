@@ -887,6 +887,7 @@ img {
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .form-input:hover,
