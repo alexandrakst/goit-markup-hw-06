@@ -570,6 +570,73 @@ img {
   text-decoration: none;
 }
 
+.footer-join {
+  margin-right: 93px;
+}
+
+.footer-subscribe {
+  font-weight: 700;
+  line-height: 1.14;
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--fourth-text-color);
+}
+
+.subscribe-email {
+  width: 358px;
+  margin-right: 12px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  background: var(--secondary-text-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-email:hover,
+.subscribe-email:focus {
+  outline: none;
+
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.subscribe-button {
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  border: transparent;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--fourth-text-color);
+  background: var(--accent-color);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--button-hover);
+  cursor: pointer;
+}
+
 /* portfolio page styles */
 
 .header.portfolio {
@@ -730,6 +797,13 @@ img {
 }
 
 .modal-title {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+
   text-align: center;
 }
 
@@ -777,6 +851,12 @@ img {
 
 .form-label {
   margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--third-text-color);
 }
 
 .form-input.textarea {
@@ -785,12 +865,19 @@ img {
 
   padding: 12px 16px;
 
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+
   resize: none;
 }
 
 .form-input {
   height: 40px;
   padding-left: 42px;
+  width: 100%;
 
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -803,16 +890,90 @@ img {
   border-radius: 4px;
 }
 
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
+
+.form-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+
+  transform: translateY(-50%);
+  outline: 1px solid red;
+}
+
+.input-wrap {
+  position: relative;
+}
+
 .submit-button {
   display: block;
-  text-align: center;
+  margin: 0 auto;
   width: 200px;
   padding: 10px 52px;
 
   border: transparent;
   border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
   color: var(--fourth-text-color);
   background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.submit-button:hover,
+.submit-button:focus {
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+    0px 2px 2px rgb(0 0 0 / 12%);
   cursor: pointer;
+}
+
+.label-accept {
+  display: flex;
+  align-items: center;
+}
+
+.accept {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--third-text-color);
+}
+
+.accept-input:checked + .label-accept .checkbox {
+  background: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border: none;
+
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox {
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+
+  display: flex;
+  align-items: center;
+
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+}
+
+.terms {
+  color: var(--accent-color);
 }
