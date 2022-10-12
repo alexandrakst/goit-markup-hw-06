@@ -338,15 +338,23 @@
           </div>
           <div class="subscribe">
             <p class="footer-subscribe">Підпишіться на розсилку</p>
-            <div>
-              <input class="subscribe-email" type="email" name="email" placeholder="E-mail" />
-              <button class="subscribe-button" type="button">
+            <form class="footer-form">
+              <label for="mail">
+                <input
+                  class="subscribe-email"
+                  type="email"
+                  name="email"
+                  id="mail"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button class="subscribe-button" type="submit">
                 Підписатися
                 <svg class="subscribe-icon" width="24" height="24">
                   <use href="./images/defs.svg#icon-send"></use>
                 </svg>
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
