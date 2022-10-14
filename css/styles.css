@@ -985,19 +985,6 @@ img {
   color: var(--third-text-color);
 }
 
-.accept-input:checked + .checkbox {
-  background: var(--accent-color);
-  border: 2px solid var(--accent-color);
-  border: none;
-
-  display: flex;
-  justify-content: center;
-}
-
-.accept-input:hover + .checkbox {
-  border-color: #188ce8;
-}
-
 .checkbox {
   width: 16px;
   height: 15px;
@@ -1008,6 +995,20 @@ img {
 
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
+}
+
+.accept-input:checked + .checkbox {
+  background: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border: none;
+
+  display: flex;
+  justify-content: center;
+}
+
+.accept-input:focus + .checkbox,
+.accept-input:hover + .checkbox {
+  border-color: #188ce8;
 }
 
 .terms {
