@@ -985,7 +985,7 @@ img {
   color: var(--third-text-color);
 }
 
-.accept-input:checked + .label-accept .checkbox {
+.accept-input:checked + .checkbox {
   background: var(--accent-color);
   border: 2px solid var(--accent-color);
   border: none;
