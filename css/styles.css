@@ -994,7 +994,7 @@ img {
   justify-content: center;
 }
 
-.accept-input:hover + .checkbox {
+.accept-input:focus + .checkbox {
   border-color: #188ce8;
 }
 
