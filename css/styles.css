@@ -589,9 +589,13 @@ img {
   align-items: center;
 }
 
+.mail {
+  display: inline-block;
+  margin-right: 12px;
+}
+
 .subscribe-email {
   width: 358px;
-  margin-right: 12px;
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
