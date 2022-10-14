@@ -745,7 +745,7 @@ img {
   overflow: hidden;
 }
 
-.portfolio-list:hover .portfolio-text {
+.portfolio-image:hover .portfolio-text {
   transform: translateY(0);
 }
 
